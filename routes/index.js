@@ -70,9 +70,8 @@ router.get('/video/:id/:link', function(req, res)
 
 				        	if(progress.time >= 32000) {
 				        		console.log('end');
-				            	videoStreams[n] = false;
 								console.log('videoStream'+n+' Status = '+videoStreams[n])
-				            	redir.shouldKeepAlive == false;
+				            	console.log(redir);
 				        	};
 				        })
 			    	    .stream().pipe(output);
@@ -90,6 +89,7 @@ router.get('/video/:id/:link', function(req, res)
 	    	{
 			    videoStreams[n] = false;
 				console.log('videoStream'+n+' Status = '+videoStreams[n])
+				request.shouldKeepAlive == false;
 	    	}
 
 		});	
@@ -97,6 +97,7 @@ router.get('/video/:id/:link', function(req, res)
 	else 
 	{
 		console.log('videoStream'+n+' Status = '+videoStreams[n])
+		// request.shouldKeepAlive == false;
 		
 	}
 
