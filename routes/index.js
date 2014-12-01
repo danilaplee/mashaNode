@@ -20,7 +20,7 @@ router.get('/video/:id/:link', function(req, res)
 
     var checkPipe = function checkPipe(n, redir) 
     {
-    	if(progressTime == undefined || progressTime > 256000) 
+    	if(progressTime == undefined || progressTime > 26000) 
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
@@ -70,7 +70,7 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 256000) {
+				        	if(progress.time >= 26000) {
 				            	videoStreams[n] = false;
 								// console.log('videoStream'+n+' Status = '+videoStreams[n])
 				            	// console.log(redir[n].connection);
