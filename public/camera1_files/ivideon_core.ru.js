@@ -1,0 +1,4 @@
+(function(c,b,a){"use strict";if(!c){return}b=c.require("ivideon.lang");b.addFunction("plural",function(f,d){f=Math.abs(~~f);var e=[2,0,1,1,1,2],g=d[(f%100>4&&f%100<20)?2:e[Math.min(f%10,5)]];return g
+})}(window._ivideon));(function(a){"use strict";if(!a){return}a.addMessages("ivideon.libs",{"jquery.ui.datepicker.lang":"ru"});a.addMessages("ivideon.utils.dlg",{"dlg.message.title":"Сообщение","dlg.message.button.close":"Закрыть","dlg.error.title":"Ошибка","dlg.info.title":"Информация","dlg.confirm.title":"Подтверждение","dlg.confirm.button.yes":"Да","dlg.confirm.button.no":"Нет","dlg.prompt.title":"Ввод","dlg.prompt.button.yes":"ОК","dlg.prompt.button.no":"Отменить"});
+a.addMessages("ivideon.utils.LanguageProvider",{"filesize.bytes":"байт","filesize.kilobytes":"КБ","filesize.megabytes":"МБ","filesize.gigabytes":"ГБ","filesize.terabytes":"ТБ","filesize.unknown":"неизвестен"})
+}(window._ivideon&&window._ivideon.lang));

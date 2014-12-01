@@ -1,0 +1,2113 @@
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-weight: normal;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: 1.0;
+  filter: Alpha(Opacity=100);
+}
+.ui-tooltip {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ui-tooltip-tipsy .ui-tooltip-content {
+  cursor: default !important;
+}
+.ui-tooltip-tipsy .ui-tooltip-content a:link,
+.ui-tooltip-tipsy .ui-tooltip-content a:visited {
+  color: #428BF0;
+}
+.iv-notify {
+  font-weight: normal;
+}
+.iv-notify .iv-notify-header {
+  margin-bottom: 0.5em;
+}
+.iv-notify .iv-notify-body {
+  margin: 0 16px 0 0.1em;
+  max-height: 400px;
+  overflow: auto;
+}
+.iv-notify.ui-state-error {
+  color: #665652;
+  border-color: #DFA08F;
+  background-color: #FFD8CE;
+  background-image: none;
+}
+.ivideon-camera-video-window {
+  -webkit-box-shadow: 5px 5px 15px rgba(200,200,200,0.5);
+  box-shadow: 5px 5px 15px rgba(200,200,200,0.5);
+  -webkit-box-shadow: 5px 5px 15px rgba(200,200,200,0.5);
+  -moz-box-shadow: 5px 5px 15px rgba(200,200,200,0.5);
+  box-shadow: 5px 5px 15px rgba(200,200,200,0.5);
+  -webkit-transform: translate(0,0);
+  -o-transform: translate(0,0);
+}
+.ui-dialog .ui-dialog-content.ivideon-camera-video-window-content {
+  padding: 0;
+}
+.ivideon-camera-video-view .ivideon-camera-video-container {
+  background-color: #1C1C1C;
+}
+.ivideon-camera-video-view.m-fullscreen .ivideon-camera-video-wrapper {
+  background-color: transparent;
+}
+.ivideon-camera-video-view .ivideon-camera-video-controls-offset {
+  left: 10px;
+  top: 10px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-control.m-disabled {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=50) !important;
+}
+.ivideon-camera-video-view .ivideon-camera-video-control {
+  margin: 5px;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message {
+  margin: 0.5em auto;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons {
+  margin: 0.5em;
+  text-align: center;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error .ivideon-camera-video-view-dialog-message {
+  padding-left: 100px;
+  min-height: 130px;
+  background: transparent url(../img/player-error_guy.png) no-repeat 10px 10px;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error.m-flash-required .ivideon-camera-video-view-dialog-message {
+  padding-left: 100px;
+  min-height: 70px;
+  background: transparent url(../img/player-flash-required.png) no-repeat 5px 0;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+  display: block;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 1.5em;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content {
+  display: block;
+}
+.ivideon-camera-video-view .ivideon-camera-video-view-timeline-container {
+  background: transparent none no-repeat left top;
+}
+.ivideon-timeline {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+.ivideon-timeline.cursor-idle .ivideon-timeline-future-overlay-wrapper,
+.ivideon-timeline.cursor-idle .ivideon-timeline-items-wrapper,
+.ivideon-timeline.cursor-idle .ivideon-timeline-tooltip-wrapper,
+.ivideon-timeline.cursor-idle .ivideon-timeline-status-wrapper {
+  cursor: pointer;
+}
+.ivideon-timeline.cursor-dragging .ivideon-timeline-future-overlay-wrapper,
+.ivideon-timeline.cursor-dragging .ivideon-timeline-items-wrapper,
+.ivideon-timeline.cursor-dragging .ivideon-timeline-tooltip-wrapper,
+.ivideon-timeline.cursor-dragging .ivideon-timeline-status-wrapper {
+  cursor: url(//static.iv-cdn.com/assets/static/closedhand.cur) 7 5, default;
+}
+.ivideon-timeline-wrapper {
+  background-color: transparent;
+  border-color: transparent;
+}
+.ivideon-timeline-wrapper,
+.ivideon-timeline-tooltip-wrapper,
+.ivideon-timeline-future-overlay-wrapper,
+.ivideon-timeline-items-wrapper,
+.ivideon-timeline-status-wrapper {
+  left: 29px;
+  right: 29px;
+}
+.ivideon-timeline-labels-style {
+  color: black;
+}
+.ivideon-timeline-records-style {
+  margin-top: 16px;
+  background-color: #EEEEEE;
+  color: #2E77DC;
+}
+.ivideon-timeline-records-style.m-type-1 {
+  color: red;
+}
+.ivideon-timeline-records-style.m-type-2 {
+  color: green;
+}
+.ivideon-timeline-records-style.m-type-3 {
+  color: blue;
+}
+.ivideon-timeline-ticks-style {
+  border-color: #414141;
+  color: #414141;
+}
+.ivideon-timeline-ticks-future-style {
+  border: 1px solid #888;
+  color: #888;
+}
+.ivideon-timeline-dates-style,
+.ivideon-timeline-dates-future-style {
+  padding-left: 2px;
+  padding-top: 10px;
+  border-top-color: #2E77DC;
+  background-color: transparent;
+  color: #2E77DC;
+}
+.ivideon-timeline-dates-future-style {
+  border-top-color: #AAA;
+  background-color: transparent;
+  color: #888;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip .ivideon-timeline-tooltip-content {
+  border: 1px solid #2E77DC;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  height: 1.1em;
+  line-height: 1.2;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.m-future .ivideon-timeline-tooltip-content {
+  border-color: #888;
+  color: #888;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip .ivideon-timeline-tooltip-date {
+  color: #2E77DC;
+}
+.ivideon-timeline-item.m-cursor.m-future {
+  background-color: #AED0EA;
+}
+.ivideon-timeline-future-overlay {
+  background-color: #D7EBF9;
+  -webkit-box-shadow: inset 3px 1px 5px rgba(68,138,181,0.6);
+  box-shadow: inset 3px 1px 5px rgba(68,138,181,0.6);
+  -webkit-box-shadow: inset 3px 1px 5px rgba(68,138,181,0.6);
+  -moz-box-shadow: inset 3px 1px 5px rgba(68,138,181,0.6);
+  box-shadow: inset 3px 1px 5px rgba(68,138,181,0.6);
+}
+.ie8 .ivideon-timeline-future-overlay {
+  border-left: 2px solid #79A8C4;
+}
+.ivideon-timeline-future-overlay-wrapper {
+  background: transparent url(../img/ivideon.views.TimelineView_records-gloss.png) repeat left 0px;
+}
+.ivideon-timeline-item.ivideon-timeline-pointer,
+.ivideon-timeline-item.ivideon-timeline-pointer.m-future {
+  z-index: 1;
+  width: 9px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -108px -99px;
+  background-image: url(../img/player-icons.png);
+}
+.ivideon-timeline-item.ivideon-timeline-pointer.m-future {
+  background-position: -140px -99px;
+  background-image: url(../img/player-icons.png);
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback,
+.ivideon-timeline-item.ivideon-timeline-item-playback.m-future {
+  top: 0;
+  width: 17px;
+  height: 25px;
+  border: 0 none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/player-icons.png);
+  background-position: -8px -99px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback.m-loading {
+  background-position: -40px -99px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback.m-paused {
+  background-position: -231px -99px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback.m-error {
+  background-position: -168px -99px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback-knob {
+  top: 29px;
+  width: 17px;
+  height: 25px;
+  border: 0 none;
+}
+.ivideon-timeline-item.ivideon-timeline-item-playback-knob.m-loading {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/loading_16x16.gif);
+  background-position: center center;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-start,
+.ivideon-timeline-item.ivideon-timeline-item-selection-end {
+  width: 19px;
+  z-index: 2;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-start {
+  background-image: url(../img/ivideon.views.TimelineView_selection-start.png);
+  background-position: left 17px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-start.m-draggable {
+  cursor: col-resize;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-end {
+  background-image: url(../img/ivideon.views.TimelineView_selection-end.png);
+  background-position: right 17px;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-end.m-draggable {
+  cursor: col-resize;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-start.m-future,
+.ivideon-timeline-item.ivideon-timeline-item-selection-end.m-future {
+  background-color: transparent;
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-span {
+  z-index: -1;
+  background-color: #FFAC1B;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ivideon-timeline-item.ivideon-timeline-item-selection-span.m-draggable {
+  cursor: move;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-error .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-error .ivideon-timeline-tooltip-icon {
+  width: 0;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: -71px -104px;
+  background-image: url(../img/player-icons.png);
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-error .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-error .ivideon-timeline-tooltip-icon {
+  background-position: -201px -104px;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-paused .ivideon-timeline-tooltip-icon {
+  background-position: -265px -104px;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-loading .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-loading .ivideon-timeline-tooltip-icon {
+  width: 0;
+  height: 16px;
+  background-position: center center;
+  background-image: url(../img/loading_16x16.gif);
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-right .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-right .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-left .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-left .ivideon-timeline-tooltip-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: -73px -105px;
+  background-image: url(../img/player-icons.png);
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-left.m-error .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-left.m-error .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-right.m-error .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-right.m-error .ivideon-timeline-tooltip-icon {
+  background-position: -201px -104px;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-left.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-left.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-right.m-paused .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-right.m-paused .ivideon-timeline-tooltip-icon {
+  background-position: -265px -104px;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-right.m-loading .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-right.m-loading .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-left.m-loading .ivideon-timeline-tooltip-icon,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-left.m-loading .ivideon-timeline-tooltip-icon {
+  width: 16px;
+  height: 16px;
+  background-position: center center;
+  background-image: url(../img/loading_16x16.gif);
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-left .ivideon-timeline-tooltip-text,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-left .ivideon-timeline-tooltip-text {
+  margin-left: 16px;
+  padding-left: 0.2em;
+}
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback.m-away-right .ivideon-timeline-tooltip-text,
+.ivideon-timeline-item.ivideon-timeline-tooltip.under-ivideon-timeline-item-playback-knob.m-away-right .ivideon-timeline-tooltip-text {
+  margin-right: 16px;
+  padding-right: 0.2em;
+}
+.ivideon-timeline-status-wrapper {
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(255,255,255,0.5), 0px 3px 4px rgba(0,0,0,0.7);
+  color: black;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress {
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  visibility: hidden;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e043";
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background: transparent none;
+  -webkit-animation: iv-spinner-anim .6s infinite linear;
+  -moz-animation: iv-spinner-anim .6s infinite linear;
+  -o-animation: iv-spinner-anim .6s infinite linear;
+  animation: iv-spinner-anim .6s infinite linear;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress:before {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  line-height: 64px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -32px 0 0 -32px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress::-moz-selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress::selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress:before {
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.6);
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-progress.active {
+  visibility: inherit;
+  opacity: 1.0 !important;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse {
+  background-image: url(../img/camera-controller-mouse-crosshair.png);
+  -webkit-transition: background-position 0.3s !important;
+  -moz-transition: background-position 0.3s !important;
+  -o-transition: background-position 0.3s !important;
+  -ms-transition: background-position 0.3s !important;
+  transition: background-position 0.3s !important;
+  -webkit-transition: background-position 0.3s !important;
+  -moz-transition: background-position 0.3s !important;
+  -o-transition: background-position 0.3s !important;
+  transition: background-position 0.3s !important;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-left {
+  background-position: 20% center;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-right {
+  background-position: 80% center;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-up {
+  background-position: center 20%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-down {
+  background-position: center 80%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-left.hover-up {
+  background-position: 20% 20%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-left.hover-down {
+  background-position: 20% 80%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-right.hover-up {
+  background-position: 80% 20%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-mouse.hover-right.hover-down {
+  background-position: 80% 80%;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-plus,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus {
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-plus:hover,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus:hover {
+  opacity: 1.0;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-plus .ui-icon,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus .ui-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-plus .ui-icon {
+  background-image: url(../img/player-icons.png);
+  background-position: -24px -24px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus .ui-icon {
+  background-image: url(../img/player-icons.png);
+  background-position: -48px -24px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  opacity: 1.0 !important;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-arrow {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: transparent none no-repeat center center;
+  border: 0;
+  text-decoration: none !important;
+  text-indent: -9999em;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-arrow.hover {
+  opacity: 1.0;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-up,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-down {
+  width: 34px;
+  height: 21px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-left,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-right {
+  width: 21px;
+  height: 34px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-up {
+  left: 21px;
+  top: 0;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-down {
+  left: 21px;
+  top: 54px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-left {
+  left: 0;
+  top: 21px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-right {
+  left: 54px;
+  top: 21px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-arrow .ivideon-camera-ptz-controller-arrow-icon {
+  display: block;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-up .ivideon-camera-ptz-controller-arrow-icon,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-down .ivideon-camera-ptz-controller-arrow-icon {
+  width: 34px;
+  height: 21px;
+  background-image: url(../img/camera-controller-rotation-up-down.gif);
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-up .ivideon-camera-ptz-controller-arrow-icon {
+  background-position: center -4px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-down .ivideon-camera-ptz-controller-arrow-icon {
+  background-position: center -76px;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-left .ivideon-camera-ptz-controller-arrow-icon,
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-right .ivideon-camera-ptz-controller-arrow-icon {
+  width: 21px;
+  height: 34px;
+  background-image: url(../img/camera-controller-rotation-left-right.gif);
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-left .ivideon-camera-ptz-controller-arrow-icon {
+  background-position: -4px center;
+}
+.ivideon-camera-video-view .ivideon-camera-ptz-controller-arrows .ivideon-camera-ptz-controller-rotation-right .ivideon-camera-ptz-controller-arrow-icon {
+  background-position: -76px center;
+}
+.ivideon-camera-stream-player .ivideon-camera-stream-player-video-frame,
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame,
+.ivideon-camera-stream-player.m-embedded .ivideon-camera-stream-player-overlay-frame,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame,
+.ivideon-camera-stream-player.m-error .ivideon-camera-stream-player-overlay-frame {
+  background: #000000 none no-repeat center center;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame:before,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e043";
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background: transparent none;
+  -webkit-animation: iv-spinner-anim .6s infinite linear;
+  -moz-animation: iv-spinner-anim .6s infinite linear;
+  -o-animation: iv-spinner-anim .6s infinite linear;
+  animation: iv-spinner-anim .6s infinite linear;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame:before,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame:before {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  line-height: 64px;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame:before,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -32px 0 0 -32px;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame::-moz-selection,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame::-moz-selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-camera-stream-player.m-embedding .ivideon-camera-stream-player-overlay-frame::selection,
+.ivideon-camera-stream-player.m-loading .ivideon-camera-stream-player-overlay-frame::selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-camera-stream-player.m-suspended .ivideon-camera-stream-player-overlay-frame {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000 url(../img/player-suspended-play.png) no-repeat center center;
+}
+.ivideon-server-list-view .b-map-server-list-item {
+  margin: 0 3px 3px 3px;
+  padding-right: 5px;
+  font-size: 1.1em;
+  font-weight: normal;
+  background: #F2F2F2;
+  border: 1px solid silver;
+  color: #555555;
+}
+.ivideon-server-list-view .b-map-server-list-item:hover {
+  background: white none;
+  border: 1px solid #999999;
+  color: #212121;
+  font-weight: normal;
+}
+.ivideon-server-list-view .b-map-server-list-item {
+  padding: 8px 12px 5px 0;
+}
+.ivideon-server-list-view .b-map-server-list-item.has-marker {
+  padding-right: 25px;
+}
+.ivideon-server-list-view .b-map-server-list-item span.server-alias {
+  height: 20px;
+}
+.ivideon-server-list-view .b-map-server-list-item span.server-marker {
+  width: 20px;
+  height: 20px;
+  background: transparent url(../img/map-server-list-item-has-marker.png) no-repeat scroll right center;
+  right: 5px;
+  top: 7px;
+  font-size: 10px;
+  line-height: 14px;
+}
+.ivideon-server-list-view .b-map-server-list-item .b-drag_handle {
+  width: 10px;
+  height: 20px;
+}
+.ivideon-server-list-view .b-map-server-list-item:hover .b-drag_handle {
+  background: url(../img/map-server-drag_handle.png) 5px center no-repeat;
+}
+.iv-map-marker-server,
+.iv-map-marker-camera,
+.b-map-server-list-item.m-drag-helper,
+.b-map-server-list-item.m-drag-helper:hover {
+  width: 41px;
+  height: 51px;
+  border: 0 none;
+  background: transparent url(../img/map-marker-server.png) no-repeat scroll 0 0;
+  min-width: 16px;
+  min-height: 47px;
+}
+.ivideon-server-list-view .b-map-server-list-item.updating span.server-marker,
+.ivideon-server-list-view .b-map-server-list-item.removing span.server-marker {
+  display: inline-block !important;
+  text-indent: -1000%;
+  background-image: url(../img/map-server-list-item-progress.gif);
+}
+.ivideon-openlayers-map .ivideon-openlayers-map-delete_marker {
+  background: transparent url(../img/map-btn-delete-marker.gif) no-repeat scroll 0 0;
+}
+.ivideon-openlayers-map .b-camera {
+  overflow: hidden;
+}
+.ivideon-openlayers-map .b-camera .b-camera-watch-button {
+  height: 97px;
+  cursor: pointer;
+}
+.ivideon-openlayers-map .b-camera .b-camera-preview .g-video-image {
+  min-width: 64px;
+  min-height: 64px;
+  visibility: hidden;
+}
+.ivideon-openlayers-map .b-camera .b-camera-preview {
+  padding-top: 5px;
+  background: transparent url(../img/map-camera-icon-64.png) no-repeat scroll center 5px;
+}
+.ivideon-openlayers-map .b-camera .b-camera-name-wrapper {
+  color: black;
+  font-weight: bold;
+}
+.ui-button .ui-button-text {
+  cursor: pointer;
+}
+.ui-accordion .ui-accordion-header a {
+  color: #FFFFFF;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+  display: none;
+}
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 1em;
+}
+.ivideon-camera-video-view .ui-button.ui-state-default,
+.ui-slider-handle.ui-state-default,
+.ui-accordion .ui-accordion-header.ui-state-default,
+.ivideon-timeline-calendar .ui-datepicker-header,
+.ivideon-timeline-calendar .ui-datepicker-prev,
+.ivideon-timeline-calendar .ui-datepicker-next,
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons .ui-state-default,
+.ivideon-camera-video-view .ivideon-camera-video-view-bottom-wrapper .ui-state-default {
+  font-weight: normal;
+  padding: 0;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #000000;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e043";
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background: transparent none;
+  -webkit-animation: iv-spinner-anim .6s infinite linear;
+  -moz-animation: iv-spinner-anim .6s infinite linear;
+  -o-animation: iv-spinner-anim .6s infinite linear;
+  animation: iv-spinner-anim .6s infinite linear;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner:before {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner::-moz-selection {
+  color: #000000;
+  background: transparent;
+}
+.ivideon-timeline-calendar.ui-state-processing .ivideon-timeline-calendar-spinner::selection {
+  color: #000000;
+  background: transparent;
+}
+.ivideon-timeline-calendar.ui-state-processing .ui-datepicker-calendar {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5000)";
+  filter: alpha(opacity=(5000));
+  opacity: 50;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ui-button.ui-state-disabled .ui-icon,
+.ivideon-timeline-calendar .ui-state-disabled .ui-icon,
+.ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons .ui-state-disabled .ui-icon,
+.ivideon-camera-video-view .ivideon-camera-video-view-bottom-wrapper .ui-state-disabled .ui-icon {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5000)";
+  filter: alpha(opacity=(5000));
+  opacity: 50;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ui-button.ui-state-disabled .ui-button-text {
+  cursor: default;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default {
+  background: #FFAC1B;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round.m-round-empty:before {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round:before {
+  background: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover {
+  background: #EA8208;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round {
+  color: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round.m-round-empty:before {
+  color: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round:before {
+  background: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled {
+  border-color: #AAAAAA;
+  background: #CCCCCC;
+  color: #FFFFFF;
+  filter: none;
+  cursor: default;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled.m-round {
+  border: 0 none;
+  background: transparent;
+  color: #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled.m-round:before {
+  background: #CCCCCC;
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled.m-round.m-round-empty:before {
+  background: transparent;
+  color: #AAAAAA;
+  border: 1px solid #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled .ui-button-text {
+  cursor: default;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.ui-state-disabled.m-round:before {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress {
+  background: #FFAC1B;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round.m-round-empty:before {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round:before {
+  background: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress:not(:required) {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-hover.m-progress:before {
+  background-image: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0)),color-stop(91.663%,rgba(255,255,255,0)),color-stop(91.663%,#ffffff),color-stop(99.996%,#ffffff));
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover {
+  background: #EA8208;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round {
+  color: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round.m-round-empty:before {
+  color: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round:before {
+  background: #EA8208;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-round:before {
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled {
+  border-color: #AAAAAA;
+  background: #CCCCCC;
+  color: #FFFFFF;
+  filter: none;
+  cursor: default;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled.m-round {
+  border: 0 none;
+  background: transparent;
+  color: #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled.m-round:before {
+  background: #CCCCCC;
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled.m-round.m-round-empty:before {
+  background: transparent;
+  color: #AAAAAA;
+  border: 1px solid #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled .ui-button-text {
+  cursor: default;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.ui-state-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.ui-state-disabled.m-round:before {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress {
+  background: #FFAC1B;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round.m-round-empty:before {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round:before {
+  background: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress:not(:required),
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress:not(:required) {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active:hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.m-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default:active.ui-state-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active:hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.m-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-active.ui-state-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active:hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.m-hover.m-progress:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-active.ui-state-hover.m-progress:before {
+  background-image: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0)),color-stop(91.663%,rgba(255,255,255,0)),color-stop(91.663%,#ffffff),color-stop(99.996%,#ffffff));
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled {
+  border-color: #AAAAAA;
+  background: #CCCCCC;
+  color: #FFFFFF;
+  filter: none;
+  cursor: default;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled.m-round,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled.m-round {
+  border: 0 none;
+  background: transparent;
+  color: #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled.m-round:before {
+  background: #CCCCCC;
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled.m-round.m-round-empty:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled.m-round.m-round-empty:before {
+  background: transparent;
+  color: #AAAAAA;
+  border: 1px solid #AAAAAA;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled .ui-button-text,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled .ui-button-text {
+  cursor: default;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-disabled.m-round:before,
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.ui-state-disabled.m-round:before {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -moz-box-shadow: inset 0 0 0 transparent;
+  box-shadow: inset 0 0 0 transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress {
+  background: #FFAC1B;
+  filter: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border-color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round:before {
+  color: #FFFFFF;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round.m-round-empty:before {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round:before {
+  background: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round.m-round-empty:before {
+  background: transparent;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round {
+  border: 0 none;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress.m-round:before {
+  border: 1px solid #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress:not(:required) {
+  color: #FFAC1B;
+}
+.ivideon-camera-video-archive-save-continue-wrapper .ui-button.ui-state-default.m-progress:before {
+  background-image: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0)),color-stop(8.333%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0.3)),color-stop(16.666%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0)),color-stop(24.999%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0.3)),color-stop(33.332%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0)),color-stop(41.665%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0.3)),color-stop(49.998%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0)),color-stop(58.331%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0.3)),color-stop(66.664%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0)),color-stop(74.997%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0.6)),color-stop(83.33%,rgba(255,255,255,0)),color-stop(91.663%,rgba(255,255,255,0)),color-stop(91.663%,#ffffff),color-stop(99.996%,#ffffff));
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: -ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+  background-image: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8.333%,rgba(255,255,255,0.3) 8.333%,rgba(255,255,255,0.3) 16.666%,rgba(255,255,255,0) 16.666%,rgba(255,255,255,0) 24.999%,rgba(255,255,255,0.3) 24.999%,rgba(255,255,255,0.3) 33.332%,rgba(255,255,255,0) 33.332%,rgba(255,255,255,0) 41.665%,rgba(255,255,255,0.3) 41.665%,rgba(255,255,255,0.3) 49.998%,rgba(255,255,255,0) 49.998%,rgba(255,255,255,0) 58.331%,rgba(255,255,255,0.3) 58.331%,rgba(255,255,255,0.3) 66.664%,rgba(255,255,255,0) 66.664%,rgba(255,255,255,0) 74.997%,rgba(255,255,255,0.6) 74.997%,rgba(255,255,255,0.6) 83.33%,rgba(255,255,255,0) 83.33%,rgba(255,255,255,0) 91.663%,#ffffff 91.663%,#ffffff 99.996%);
+}
+.ivideon-camera-video-view .ivideon-camera-video-menu-control .ivideon-camera-video-menu-item.m-selected.ui-state-default,
+.ivideon-camera-video-view .ivideon-camera-video-menu-control .ivideon-camera-video-menu-item.m-selected.ui-state-hover.ui-state-active,
+.ivideon-camera-video-live-button.m-live.ui-state-default,
+.ivideon-camera-video-live-button.m-live.ui-state-hover.ui-state-active {
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+}
+.ivideon-camera-video-view .ivideon-camera-video-menu-control .ivideon-camera-video-menu-item.m-selected.ui-state-hover,
+.ivideon-camera-video-live-button.m-live.ui-state-hover {
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+.no-touch .ivideon-camera-video-view .ivideon-camera-video-control,
+.no-touch .ivideon-camera-video-view .ivideon-camera-video-control.ui-state-disabled,
+.no-touch .ivideon-camera-video-view .ivideon-camera-video-control.ui-state-disabled:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.ios .ivideon-camera-video-view .ivideon-camera-video-control,
+.m-dt-smartphone .ivideon-camera-video-view .ivideon-camera-video-control,
+.ios .ivideon-camera-video-view .ivideon-camera-video-control.ui-state-disabled:hover,
+.m-dt-smartphone .ivideon-camera-video-view .ivideon-camera-video-control.ui-state-disabled:hover,
+.no-touch .ivideon-camera-video-view .ivideon-camera-video-control:hover {
+  opacity: 1.0;
+}
+.ivideon-camera-video-fullscreen-button .ui-icon,
+.ivideon-camera-video-mute-button .ui-icon,
+.ivideon-camera-video-embed-button .ui-icon,
+.ivideon-camera-video-abuse-button .ui-icon,
+.ivideon-camera-video-live-button .ui-icon,
+.ivideon-camera-video-playpause-button .ui-icon,
+.ivideon-camera-video-archive-save-start-button .ui-icon,
+.ivideon-camera-video-archive-save-done-button .ui-icon,
+.ivideon-camera-video-archive-save-cancel-button .ui-icon,
+.ivideon-camera-video-quality-control .ui-icon,
+.ivideon-timeline-button.ivideon-timeline-button-scroll-left .ui-icon,
+.ivideon-timeline-button.ivideon-timeline-button-scroll-right .ui-icon,
+.ivideon-timeline-button.ivideon-timeline-button-zoom-in .ui-icon,
+.ivideon-timeline-button.ivideon-timeline-button-zoom-out .ui-icon,
+.ivideon-timeline-button.ivideon-timeline-button-center .ui-icon,
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-curr .ui-icon,
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-prev .ui-icon,
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-next .ui-icon,
+.ivideon-timeline-calendar .ui-datepicker .ui-datepicker-prev .ui-icon,
+.ivideon-timeline-calendar .ui-datepicker .ui-datepicker-next .ui-icon,
+.ivideon-video-embed-dialog .b-cancel-public-access-button .ui-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: -12px;
+  margin-top: -12px;
+  background-repeat: no-repeat;
+  background-image: url(../img/player-icons.png) !important;
+}
+.ivideon-camera-video-fullscreen-button .ui-icon-arrow-4-diag {
+  background-position: 0 -71px;
+}
+.ivideon-camera-video-fullscreen-button .ui-icon-arrowreturnthick-1-w {
+  background-position: -24px -71px;
+}
+.ivideon-camera-video-playpause-button .ui-icon.ui-icon-play {
+  background-position: -48px -71px;
+}
+.ivideon-camera-video-playpause-button .ui-icon.ui-icon-pause {
+  background-position: -72px -71px;
+}
+.ivideon-camera-video-playpause-button .ui-icon.ui-icon-stop {
+  background-position: -216px -71px;
+}
+.ivideon-camera-video-playpause-button .ivideon-icon-player-live {
+  background-position: -192px -71px;
+}
+.ivideon-camera-video-archive-save-start-button .ui-icon {
+  background-position: -240px -71px;
+}
+.ivideon-camera-video-archive-save-done-button .ui-icon {
+  background-position: -264px -71px;
+}
+.ivideon-camera-video-archive-save-cancel-button .ui-icon {
+  background-position: -288px -71px;
+}
+.ivideon-camera-video-quality-control .ivideon-camera-video-menu-value-0 .ui-icon {
+  background-position: -312px -71px;
+}
+.ivideon-camera-video-quality-control .ivideon-camera-video-menu-value-1 .ui-icon {
+  background-position: -336px -71px;
+}
+.ivideon-camera-video-quality-control .ivideon-camera-video-menu-value-2 .ui-icon {
+  background-position: -360px -71px;
+}
+.ivideon-camera-video-mute-button .ui-icon.ui-icon-volume-on {
+  background-position: -120px -71px;
+}
+.ivideon-camera-video-mute-button .ui-icon.ui-icon-volume-off {
+  background-position: -144px -71px;
+}
+.ivideon-camera-video-embed-button .ui-icon {
+  background-position: -168px -71px;
+}
+.ivideon-camera-video-abuse-button .ui-icon {
+  background-position: -216px -48px;
+}
+.ivideon-camera-video-live-button .ui-icon {
+  margin-left: -4px;
+  background-position: -192px -71px;
+}
+.ivideon-camera-video-live-button.m-live .ui-icon {
+  background-position: -192px -47px;
+}
+.ivideon-timeline-button.ivideon-timeline-button-scroll-left .ui-icon {
+  background-position: 0 1px;
+}
+.ivideon-timeline-button.ivideon-timeline-button-scroll-right .ui-icon {
+  background-position: -24px 1px;
+}
+.ivideon-timeline-button.ivideon-timeline-button-zoom-in .ui-icon {
+  background-position: -24px -23px;
+}
+.ivideon-timeline-button.ivideon-timeline-button-zoom-out .ui-icon {
+  background-position: -48px -23px;
+}
+.ivideon-timeline-button.ivideon-timeline-button-center .ui-icon {
+  background-position: -72px -23px;
+}
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-prev .ui-icon {
+  background-position: -48px 1px;
+}
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-next .ui-icon {
+  background-position: -72px 1px;
+}
+.ivideon-timeline-calendar-button-wrapper .ivideon-timeline-calendar-button-curr .ui-icon {
+  margin-left: -4px;
+  background-position: -24px -47px;
+}
+.ivideon-timeline-calendar .ui-datepicker .ui-datepicker-prev .ui-icon {
+  background-position: -96px 1px;
+}
+.ivideon-timeline-calendar .ui-datepicker .ui-datepicker-next .ui-icon {
+  background-position: -120px 1px;
+}
+.ivideon-video-embed-dialog .b-cancel-public-access-button .ui-icon {
+  background-position: -288px -71px;
+}
+.ivideon-editable-input {
+  padding: 2px;
+  border: 1px solid #999;
+}
+.ivideon-editable-input.m-success {
+  border-color: #0C0;
+  color: #0A0;
+}
+.ivideon-editable-input.m-error {
+  border-color: #C00;
+  color: #A00;
+}
+.ivideon-editable-input.m-placeholder {
+  color: #AAA;
+}
+.ivideon-editable-input.m-disabled {
+  border-color: #AAA;
+  color: #AAA;
+  background-color: #EEE;
+}
+.ivideon-video-embed-dialog .b-close-public-access-button {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+.ivideon-video-embed-dialog .b-embed_type-buttons .ui-button.m-selected {
+  border-color: #ce8518;
+  background: #e8991b;
+  filter: none;
+  -ms-filter: "none";
+}
+.ivideon-video-embed-dialog .b-size_selection_buttons .b-size_button {
+  color: #666;
+}
+.ivideon-video-embed-dialog .b-size_selection_buttons .b-size_button:hover {
+  border: 1px solid #aaa;
+}
+.ivideon-video-embed-dialog .b-size_selection_buttons .b-size_button.m-selected {
+  border: 1px solid #A0B3D9;
+  background: #D8E6FB;
+}
+.ivideon-video-embed-dialog .b-size_selection_buttons .b-size_button .b-sample {
+  border: 1px solid #999;
+  background: #ddd;
+}
+.ivideon-camera-publish-dialog .b-loading-indicator {
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 20px;
+  bottom: 10px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #FFFFFF;
+}
+.ivideon-camera-publish-dialog .b-loading-indicator:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e043";
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background: transparent none;
+  -webkit-animation: iv-spinner-anim .6s infinite linear;
+  -moz-animation: iv-spinner-anim .6s infinite linear;
+  -o-animation: iv-spinner-anim .6s infinite linear;
+  animation: iv-spinner-anim .6s infinite linear;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ivideon-camera-publish-dialog .b-loading-indicator:before {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.ivideon-camera-publish-dialog .b-loading-indicator::-moz-selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-camera-publish-dialog .b-loading-indicator::selection {
+  color: #FFFFFF;
+  background: transparent;
+}
+.ivideon-locker-window {
+  background: white;
+  border: none;
+  font-size: 1em;
+  -webkit-box-shadow: 0 0 23px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 23px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 23px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 23px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 23px 5px rgba(0,0,0,0.2);
+}
+.ivideon-locker-window .ui-tooltip-titlebar {
+  background: white;
+  padding: 1.5em;
+  border-bottom: 1px solid #688EBD;
+  color: #688EBD;
+  font-weight: normal;
+}
+.ivideon-locker-window .ui-tooltip-content {
+  padding: 1.5em;
+}
+.ivideon-locker-window .ivideon-locker-window-text.m-loading {
+  background: url(../img/locker-loading-indicator.gif) no-repeat left center;
+  padding-left: 24px;
+  line-height: 16px;
+}
+.mq-max-width-640 .ui-dialog {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.mq-max-width-640 .ui-dialog .ui-dialog-content {
+  padding: 0;
+  padding-bottom: 0.2em;
+}
+.mq-max-width-640 .ui-dialog .ui-dialog-content .ui-accordion .ui-accordion-content {
+  padding: 0.5em;
+}
+.mq-max-width-640 .ivideon-camera-video-view .ivideon-camera-video-view-dialog {
+  font-size: 12px;
+}
+.mq-max-width-640 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.mq-max-width-480 .ivideon-camera-video-view .ivideon-camera-video-view-dialog {
+  font-size: 11px;
+}
+.mq-max-width-480 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.mq-max-width-480 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content {
+  margin-bottom: 0.5em;
+}
+.mq-max-width-480 .ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error .ivideon-camera-video-view-dialog-message {
+  padding-left: 50px;
+  min-height: 65px;
+  background: transparent url(../img/player-error_guy_480.png) no-repeat 5px 5px;
+}
+.mq-max-width-480 .ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error.m-flash-required .ivideon-camera-video-view-dialog-message {
+  padding-left: 45px;
+  min-height: 35px;
+  background: transparent url(../img/player-flash-required_480.png) no-repeat 2px 0;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-control,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-control {
+  margin: 3px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-fullscreen-button,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-playpause-button,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-live-button,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-mute-button,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-embed-button,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-abuse-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-fullscreen-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-playpause-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-live-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-mute-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-embed-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-abuse-button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus {
+  width: 25px;
+  height: 25px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-volume-slider,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-volume-slider {
+  bottom: 25px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-quality-control .ivideon-camera-video-menu-item,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-quality-control .ivideon-camera-video-menu-item,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-speed-control .ivideon-camera-video-menu-item,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-speed-control .ivideon-camera-video-menu-item {
+  height: 25px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-speed-control .ui-button-text,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-button-text,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-speed-control .ui-button-text,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-button-text {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 0;
+  padding-left: 25px;
+  line-height: 25px;
+  text-indent: -9999px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-icon,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-icon {
+  margin-left: -7px;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message,
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons {
+  margin: 0.2em auto;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+  display: none;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content {
+  margin-top: 0;
+}
+.mq-max-height-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons button,
+.mq-max-width-320 .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons button {
+  margin-bottom: 0.2em;
+}
+@media all and (max-width: 640px) {
+  .ui-dialog {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog {
+    font-size: 12px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+@media all and (max-width: 480px) {
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog {
+    font-size: 11px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content {
+    margin-bottom: 0.5em;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error .ivideon-camera-video-view-dialog-message {
+    padding-left: 50px;
+    min-height: 65px;
+    background: transparent url(../img/player-error_guy_480.png) no-repeat 5px 5px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog.m-error.m-flash-required .ivideon-camera-video-view-dialog-message {
+    padding-left: 45px;
+    min-height: 35px;
+    background: transparent url(../img/player-flash-required_480.png) no-repeat 2px 0;
+  }
+}
+@media all and (max-width: 320px),all and (max-height: 320px) {
+  .ivideon-camera-video-view .ivideon-camera-video-control {
+    margin: 3px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-fullscreen-button,
+  .ivideon-camera-video-view .ivideon-camera-video-playpause-button,
+  .ivideon-camera-video-view .ivideon-camera-video-live-button,
+  .ivideon-camera-video-view .ivideon-camera-video-mute-button,
+  .ivideon-camera-video-view .ivideon-camera-video-quality-control .ivideon-camera-video-menu-item,
+  .ivideon-camera-video-view .ivideon-camera-video-embed-button,
+  .ivideon-camera-video-view .ivideon-camera-video-speed-control .ivideon-camera-video-menu-item,
+  .ivideon-camera-video-view .ivideon-camera-video-abuse-button,
+  .ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-plus,
+  .ivideon-camera-video-view .ivideon-camera-ptz-controller-zoom-minus {
+    width: 25px;
+    height: 25px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-volume-slider {
+    left: 8px;
+    bottom: 23px;
+    height: 50px;
+    font-size: 10px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-button-text {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    padding-left: 25px;
+    line-height: 25px;
+    text-indent: -9999px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-speed-control .ui-button-text {
+    font-size: 12px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-live-button .ui-icon {
+    margin-left: -7px;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message,
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons {
+    margin: 0.2em auto;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-header {
+    display: none;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-message .ivideon-camera-video-view-dialog-content {
+    margin-top: 0;
+  }
+  .ivideon-camera-video-view .ivideon-camera-video-view-dialog .ivideon-camera-video-view-dialog-buttons button {
+    margin-bottom: 0.2em;
+  }
+}

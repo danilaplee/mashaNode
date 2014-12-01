@@ -1,0 +1,2 @@
+(function(a){"use strict";if(!a){return}a.addMessages("ivideon.utils.Locker",{please_wait:"Пожалуйста, подождите…","error.text":'<p>Произошла неизвестная ошибка. Скорее всего, мы получили автоматическое уведомление об этом.</p><p>Но если в ближайшее время проблема не исчезнет, пожалуйста, свяжитесь с нами по адресу <a href="mailto:support@ivideon.ru">support@ivideon.ru</a>.</p>',"error.refresh":"Перезагрузить"})
+}(window._ivideon&&window._ivideon.lang));

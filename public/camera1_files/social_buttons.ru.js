@@ -1,0 +1,2 @@
+(function(a){"use strict";if(!a){return}a.addMessages("ivideon.views.SocialButtons",{"buttons.facebook":"Поделиться в Facebook","buttons.twitter":"Добавить в Twitter","buttons.linkedin":"Добавить в Linkedin","buttons.google_plus":"Добавить +1 и поделиться в Google+","buttons.tumblr":"Добавить в Tumblr","buttons.stumbleupon":"Добавить в StumbleUpon","buttons.vkontakte":"Поделиться ВКонтакте","buttons.odnoklassniki":"Добавить в Одноклассники","buttons.mail_ru":"Поделиться в Моем Мире@Mail.Ru","buttons.weibo":"Поделиться в Weibo"})
+}(window._ivideon&&window._ivideon.lang));

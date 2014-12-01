@@ -1,0 +1,1003 @@
+.m-style-iv .b-tariff_plan-manager-wrapper,
+.m-style-generic .b-tariff_plan-manager-wrapper {
+  padding: 1em 15px 0;
+  margin: -1em -15px 0;
+}
+.m-style-iv .b-tariff_plan-manager-wrapper .b-tariff-selector,
+.m-style-iv .b-tariff_plan-manager-wrapper .b-cost-info .b-cost-current,
+.m-style-iv .b-tariff_plan-manager-wrapper .b-cost-info .b-cost-switch,
+.m-style-generic .b-tariff_plan-manager-wrapper .b-tariff-selector,
+.m-style-generic .b-tariff_plan-manager-wrapper .b-cost-info .b-cost-current,
+.m-style-generic .b-tariff_plan-manager-wrapper .b-cost-info .b-cost-switch {
+  margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  .m-style-iv .b-tariff-manager .b-tariff_plan-manager-wrapper .b-cost-info .h-cost-modification-info .b-cost-modification-info,
+  .m-style-generic .b-tariff-manager .b-tariff_plan-manager-wrapper .b-cost-info .h-cost-modification-info .b-cost-modification-info {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 940px) {
+  .m-style-iv .l-page,
+  .m-style-generic .l-page {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 910px;
+  }
+  .m-style-iv .b-header .b-my2-suggestion,
+  .m-style-generic .b-header .b-my2-suggestion {
+    display: none;
+  }
+  .m-style-iv .l-content,
+  .m-style-generic .l-content {
+    padding: 1.5em 15px 0;
+  }
+}
+@media only screen and (max-width: 939px) {
+  .m-style-iv .l-page,
+  .m-style-generic .l-page {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: none;
+  }
+  .m-style-iv .h-header,
+  .m-style-generic .h-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .m-style-iv .b-header,
+  .m-style-generic .b-header {
+    margin: 0;
+    padding: 5px 15px 0;
+    max-width: none;
+    background: transparent none;
+  }
+  .m-style-iv .l-content,
+  .m-style-generic .l-content {
+    margin: 0;
+    padding: 10px 15px 0;
+  }
+  .m-style-iv .b-footer,
+  .m-style-generic .b-footer {
+    margin-top: 1.5em;
+  }
+  .m-style-iv .b-footer .b-footer-column,
+  .m-style-generic .b-footer .b-footer-column {
+    margin-right: 10%;
+    max-width: 40%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .m-style-iv .b-login-info__welcome,
+  .m-style-generic .b-login-info__welcome {
+    display: none;
+  }
+  .m-style-iv .b-header__items,
+  .m-style-generic .b-header__items {
+    right: 5px;
+    top: 5px;
+  }
+  .m-style-iv .b-header__items .iv-langs,
+  .m-style-iv .b-header__items .b-mobile_link,
+  .m-style-iv .b-header__items .b-desktop_link,
+  .m-style-iv .b-header__items .b-phone_link,
+  .m-style-generic .b-header__items .iv-langs,
+  .m-style-generic .b-header__items .b-mobile_link,
+  .m-style-generic .b-header__items .b-desktop_link,
+  .m-style-generic .b-header__items .b-phone_link {
+    display: none;
+  }
+  .m-style-iv .b-mainmenu,
+  .m-style-generic .b-mainmenu {
+    display: none;
+  }
+  .m-style-iv .b-footer-provider-menu,
+  .m-style-generic .b-footer-provider-menu {
+    display: block;
+  }
+  .m-style-iv .b-header__items .b-login-info__login,
+  .m-style-iv .b-header__items .b-login-info__signup,
+  .m-style-iv .b-header__items .b-login-info__account,
+  .m-style-generic .b-header__items .b-login-info__login,
+  .m-style-generic .b-header__items .b-login-info__signup,
+  .m-style-generic .b-header__items .b-login-info__account {
+    display: inline-block;
+    padding: 0.5em;
+    padding-top: 0.1em;
+    border-left: 0 none;
+  }
+  .m-style-iv .b-header__items .b-login-info__logout,
+  .m-style-generic .b-header__items .b-login-info__logout {
+    display: none;
+  }
+  .m-style-iv .h-page-form .b-form,
+  .m-style-generic .h-page-form .b-form {
+    width: 95%;
+    max-width: 95%;
+  }
+  .m-style-iv .h-page-form .b-form label,
+  .m-style-generic .h-page-form .b-form label {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .m-style-iv .h-page-form .b-form label.m-label-after-checkbox,
+  .m-style-generic .h-page-form .b-form label.m-label-after-checkbox {
+    display: inline;
+  }
+  .m-style-iv .h-page-form .b-form .b-row.m-checkbox,
+  .m-style-generic .h-page-form .b-form .b-row.m-checkbox {
+    white-space: normal;
+    padding-left: 0;
+  }
+  .m-style-iv .h-page-form .b-form .b-row.m-checkbox label,
+  .m-style-generic .h-page-form .b-form .b-row.m-checkbox label {
+    display: inline;
+  }
+  .m-style-iv .h-page-form .b-form .b-row.m-checkbox input,
+  .m-style-generic .h-page-form .b-form .b-row.m-checkbox input {
+    display: inline;
+    top: 1px;
+  }
+  .m-style-iv .h-page-form .b-form .b-captcha,
+  .m-style-generic .h-page-form .b-form .b-captcha {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+  }
+  .m-style-iv .h-page-form .b-form .b-captcha .h-captcha,
+  .m-style-generic .h-page-form .b-form .b-captcha .h-captcha {
+    display: block;
+  }
+  .m-style-iv .h-page-form .b-form .b-captcha-input,
+  .m-style-generic .h-page-form .b-form .b-captcha-input {
+    width: 50%;
+    clear: right;
+  }
+  .m-style-iv .h-page-form .b-form.m-wide,
+  .m-style-generic .h-page-form .b-form.m-wide {
+    width: 95%;
+    max-width: 95%;
+  }
+  .m-style-iv .h-page-form .b-form.m-wide .b-row,
+  .m-style-generic .h-page-form .b-form.m-wide .b-row {
+    text-align: center;
+  }
+  .m-style-iv .h-page-form .b-form.m-wide .b-row.m-buttons .b-buttons,
+  .m-style-iv .h-page-form .b-form.m-wide .b-row.m-buttons .b-quicklinks,
+  .m-style-generic .h-page-form .b-form.m-wide .b-row.m-buttons .b-buttons,
+  .m-style-generic .h-page-form .b-form.m-wide .b-row.m-buttons .b-quicklinks {
+    float: none;
+    clear: both;
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+  .m-style-iv .h-page-form .b-form.m-wide .b-row.m-checkbox,
+  .m-style-generic .h-page-form .b-form.m-wide .b-row.m-checkbox {
+    text-align: left;
+  }
+  .m-style-iv .h-page-form .b-form input[type="text"],
+  .m-style-iv .h-page-form .b-form input[type="password"],
+  .m-style-iv .h-page-form .b-form input[type="email"],
+  .m-style-iv .h-page-form .b-form input[type="url"],
+  .m-style-iv .h-page-form .b-form input[type="tel"],
+  .m-style-iv .h-page-form .b-form input[type="search"],
+  .m-style-iv .h-page-form .b-form textarea,
+  .m-style-iv .h-page-form .b-form select,
+  .m-style-iv .h-page-form .b-form.m-wide input[type="text"],
+  .m-style-iv .h-page-form .b-form.m-wide input[type="password"],
+  .m-style-iv .h-page-form .b-form.m-wide input[type="email"],
+  .m-style-iv .h-page-form .b-form.m-wide input[type="url"],
+  .m-style-iv .h-page-form .b-form.m-wide input[type="tel"],
+  .m-style-iv .h-page-form .b-form.m-wide input[type="search"],
+  .m-style-iv .h-page-form .b-form.m-wide textarea,
+  .m-style-iv .h-page-form .b-form.m-wide select,
+  .m-style-generic .h-page-form .b-form input[type="text"],
+  .m-style-generic .h-page-form .b-form input[type="password"],
+  .m-style-generic .h-page-form .b-form input[type="email"],
+  .m-style-generic .h-page-form .b-form input[type="url"],
+  .m-style-generic .h-page-form .b-form input[type="tel"],
+  .m-style-generic .h-page-form .b-form input[type="search"],
+  .m-style-generic .h-page-form .b-form textarea,
+  .m-style-generic .h-page-form .b-form select,
+  .m-style-generic .h-page-form .b-form.m-wide input[type="text"],
+  .m-style-generic .h-page-form .b-form.m-wide input[type="password"],
+  .m-style-generic .h-page-form .b-form.m-wide input[type="email"],
+  .m-style-generic .h-page-form .b-form.m-wide input[type="url"],
+  .m-style-generic .h-page-form .b-form.m-wide input[type="tel"],
+  .m-style-generic .h-page-form .b-form.m-wide input[type="search"],
+  .m-style-generic .h-page-form .b-form.m-wide textarea,
+  .m-style-generic .h-page-form .b-form.m-wide select {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 3em;
+  }
+  .m-style-iv .h-page-form .b-form.m-wide .b-captcha-input,
+  .m-style-generic .h-page-form .b-form.m-wide .b-captcha-input {
+    display: inline-block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 50% !important;
+  }
+  .m-style-iv.m-with-page-tabs .h-header,
+  .m-style-generic.m-with-page-tabs .h-header {
+    padding-top: 65px;
+  }
+  .m-style-iv .b-cpanel-tabs,
+  .m-style-generic .b-cpanel-tabs {
+    border-bottom-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .m-style-iv.touch .b-cpanel-tabs,
+  .m-style-generic.touch .b-cpanel-tabs {
+    margin-left: -20px;
+  }
+  .m-style-iv .cpanel-tabs,
+  .m-style-generic .cpanel-tabs {
+    display: block;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 97;
+    min-width: 320px;
+    min-height: 50px;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #4F81BC;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab__logout,
+  .m-style-generic .cpanel-tabs .cpanel-tab__logout {
+    display: block;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab,
+  .m-style-generic .cpanel-tabs .cpanel-tab {
+    display: block;
+    float: none;
+    margin: 0;
+    height: 0px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab a,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:link,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:visited,
+  .m-style-generic .cpanel-tabs .cpanel-tab a,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:link,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:visited {
+    display: block;
+    color: #FFFFFF;
+    background: #4F81BC;
+    border: 0 none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-image: none;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 15px;
+    vertical-align: middle;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab a:hover,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:link:hover,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:visited:hover,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:hover,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:link:hover,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:visited:hover {
+    background: #618ec3;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab a span,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:link span,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:visited span,
+  .m-style-generic .cpanel-tabs .cpanel-tab a span,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:link span,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:visited span {
+    vertical-align: middle;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab a:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:link:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab a:visited:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:link:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab a:visited:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected {
+    display: block;
+    height: 50px;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a,
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a:link,
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a:visited,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a:link,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a:visited {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: transparent;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a:link:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab.m-selected a:visited:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a:link:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab.m-selected a:visited:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e03e";
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab__menu-placeholder.m-selected,
+  .m-style-generic .cpanel-tabs .cpanel-tab__menu-placeholder.m-selected {
+    display: block;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab__logout a:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab__logout a:link:before,
+  .m-style-iv .cpanel-tabs .cpanel-tab__logout a:visited:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab__logout a:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab__logout a:link:before,
+  .m-style-generic .cpanel-tabs .cpanel-tab__logout a:visited:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e007";
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+  }
+  .m-style-iv .cpanel-tabs.m-expanded,
+  .m-style-iv.no-touch .cpanel-tabs:hover,
+  .m-style-generic .cpanel-tabs.m-expanded,
+  .m-style-generic.no-touch .cpanel-tabs:hover {
+    margin-top: -1px;
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+  }
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab {
+    display: block;
+    height: 50px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    -ms-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    -ms-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    -ms-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+  }
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab.m-first,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab.m-first,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab.m-first,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab.m-first {
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    -ms-transition: height 0s;
+    transition: height 0s;
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    transition: height 0s;
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    -ms-transition: height 0s;
+    transition: height 0s;
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    transition: height 0s;
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    -ms-transition: height 0s;
+    transition: height 0s;
+    -webkit-transition: height 0s;
+    -moz-transition: height 0s;
+    -o-transition: height 0s;
+    transition: height 0s;
+  }
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:before,
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:link:before,
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:visited:before,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:before,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:link:before,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:visited:before,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:before,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:link:before,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab.m-selected a:visited:before,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:before,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:link:before,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab.m-selected a:visited:before {
+    content: "\e01d";
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+  }
+  .m-style-iv .cpanel-tabs.m-expanded .cpanel-tab__menu-placeholder.m-selected,
+  .m-style-iv.no-touch .cpanel-tabs:hover .cpanel-tab__menu-placeholder.m-selected,
+  .m-style-generic .cpanel-tabs.m-expanded .cpanel-tab__menu-placeholder.m-selected,
+  .m-style-generic.no-touch .cpanel-tabs:hover .cpanel-tab__menu-placeholder.m-selected {
+    display: none;
+  }
+  .m-style-iv .cpanel-shortinfo,
+  .m-style-generic .cpanel-shortinfo {
+    float: none;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .m-style-iv.page__service__login .b-header__items,
+  .m-style-iv.page__service__sign_up .b-header__items,
+  .m-style-generic.page__service__login .b-header__items,
+  .m-style-generic.page__service__sign_up .b-header__items {
+    display: none;
+  }
+  .m-style-iv.page__pages__downloads .downloads-list-column,
+  .m-style-generic.page__pages__downloads .downloads-list-column {
+    display: block;
+    width: auto;
+  }
+  .m-style-iv.page__billing__tariff .b-tariff_plan-manager-wrapper .b-tariff-manager-header,
+  .m-style-generic.page__billing__tariff .b-tariff_plan-manager-wrapper .b-tariff-manager-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .m-style-iv .b-header .b-my2-suggestion,
+  .m-style-generic .b-header .b-my2-suggestion {
+    display: none;
+  }
+  .m-style-iv .h-mainmenu,
+  .m-style-generic .h-mainmenu {
+    position: static;
+    display: none;
+  }
+  .m-style-iv .h-mainmenu li,
+  .m-style-generic .h-mainmenu li {
+    display: block;
+  }
+  .m-style-iv .b-footer .b-footer-column,
+  .m-style-generic .b-footer .b-footer-column {
+    display: block;
+    width: auto;
+    max-width: none;
+    height: auto;
+    margin: 0 0 1.5em 0;
+  }
+  .m-style-iv .b-footer .b-footer-column.m-last,
+  .m-style-generic .b-footer .b-footer-column.m-last {
+    border-bottom: 0 none;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .m-style-iv h1,
+  .m-style-generic h1 {
+    font-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .m-style-iv h2,
+  .m-style-generic h2 {
+    font-size: 1.2em;
+  }
+  .m-style-iv .h-page-form .b-form,
+  .m-style-generic .h-page-form .b-form {
+    width: 100%;
+  }
+  .m-style-iv .b-header__items,
+  .m-style-generic .b-header__items {
+    float: right;
+    text-align: right;
+  }
+  .m-style-iv .b-header__items .b-login-info,
+  .m-style-generic .b-header__items .b-login-info {
+    float: none;
+    margin-left: 0;
+    text-align: right;
+  }
+  .m-style-iv .b-form .b-row.m-buttons .b-quicklinks,
+  .m-style-generic .b-form .b-row.m-buttons .b-quicklinks {
+    margin-left: 0.5em;
+    margin-top: 1em;
+  }
+  .m-style-iv .b-form .b-row.m-buttons .b-quicklinks__item,
+  .m-style-generic .b-form .b-row.m-buttons .b-quicklinks__item {
+    margin-bottom: 1em;
+  }
+  .m-style-iv .b-form .b-row.m-buttons .b-quicklinks__group,
+  .m-style-generic .b-form .b-row.m-buttons .b-quicklinks__group {
+    margin-bottom: 1.5em;
+  }
+  .m-style-iv .b-form .b-row.m-buttons .b-quicklinks__group .b-quicklinks__item,
+  .m-style-generic .b-form .b-row.m-buttons .b-quicklinks__group .b-quicklinks__item {
+    display: block;
+  }
+  .m-style-iv .b-form .b-row.m-buttons .b-quicklinks__group .b-quicklinks__item:before,
+  .m-style-generic .b-form .b-row.m-buttons .b-quicklinks__group .b-quicklinks__item:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .m-style-iv .b-header__logo,
+  .m-style-generic .b-header__logo {
+    float: none;
+    text-align: center;
+  }
+  .m-style-iv .b-header__items,
+  .m-style-generic .b-header__items {
+    position: static;
+    float: none;
+    text-align: center;
+    margin-left: 0;
+  }
+  .m-style-iv .b-header__items .b-layout-switcher,
+  .m-style-generic .b-header__items .b-layout-switcher {
+    display: none;
+  }
+  .m-style-iv .b-header__items .b-login-info,
+  .m-style-generic .b-header__items .b-login-info {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .m-style-iv h1,
+  .m-style-generic h1 {
+    font-size: 1.3em;
+  }
+  .m-style-iv h2,
+  .m-style-generic h2 {
+    font-size: 1.1em;
+  }
+}
+.m-style-iv h1 {
+  font-weight: normal;
+}
+.m-style-iv .b-logo .b-logo-link {
+  background: transparent url(../img/ivideon-logo.png) no-repeat left bottom;
+  width: 190px;
+  height: 45px;
+}
+.m-style-iv .iv-phone-number {
+  color: #4F81BC;
+}
+@media only screen and (min-width: 940px) {
+  .m-style-iv .cpanel-tabs .cpanel-tab__settings a {
+    height: 1.5em;
+    width: 1.5em;
+    background-position: center center;
+  }
+  .m-style-iv .cpanel-tabs .cpanel-tab__settings a span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 939px) {
+  .m-style-iv.m-with-page-tabs .h-header {
+    padding-top: 0;
+  }
+  .m-style-iv .h-header {
+    padding: 0;
+    background: #4F81BC;
+    color: #FFFFFF;
+  }
+  .m-style-iv .h-header a,
+  .m-style-iv .h-header a:link,
+  .m-style-iv .h-header a:visited {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .h-header a:hover,
+  .m-style-iv .h-header a:focus,
+  .m-style-iv .h-header a:active {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .h-header a,
+  .m-style-iv .h-header a:link,
+  .m-style-iv .h-header a:visited {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .h-header a:hover,
+  .m-style-iv .h-header a:focus,
+  .m-style-iv .h-header a:active {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .h-header a,
+  .m-style-iv .h-header a:link,
+  .m-style-iv .h-header a:visited {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .h-header a:hover,
+  .m-style-iv .h-header a:focus,
+  .m-style-iv .h-header a:active {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+  .m-style-iv .b-header {
+    padding: 0;
+    border: 0;
+  }
+  .m-style-iv .b-header__logo {
+    padding: 0;
+    min-height: 50px;
+    overflow: hidden;
+  }
+  .m-style-iv .b-header__logo .b-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 98;
+  }
+  .m-style-iv .b-header__logo .b-logo .b-logo-link {
+    background: transparent none;
+    width: auto;
+    height: auto;
+    padding: 0 15px;
+  }
+  .m-style-iv .b-header__logo .b-logo .b-logo-link:before {
+    font-family: 'ivideon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'ivideon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'ivideon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e035";
+    line-height: 50px;
+    font-size: 36px;
+    position: relative;
+    top: 3px;
+  }
+  .m-style-iv .b-header__logo .b-logo .b-logo-text {
+    display: none;
+  }
+  .m-style-iv .b-header__items {
+    position: static;
+    float: none;
+    padding: 6px 15px;
+    background: #EDEFF8;
+    color: #414141;
+    border-bottom: 1px solid #E1E5EC;
+  }
+  .m-style-iv .b-header__items a,
+  .m-style-iv .b-header__items a:link,
+  .m-style-iv .b-header__items a:visited {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items a:hover,
+  .m-style-iv .b-header__items a:focus,
+  .m-style-iv .b-header__items a:active {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items a,
+  .m-style-iv .b-header__items a:link,
+  .m-style-iv .b-header__items a:visited {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items a:hover,
+  .m-style-iv .b-header__items a:focus,
+  .m-style-iv .b-header__items a:active {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items a,
+  .m-style-iv .b-header__items a:link,
+  .m-style-iv .b-header__items a:visited {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items a:hover,
+  .m-style-iv .b-header__items a:focus,
+  .m-style-iv .b-header__items a:active {
+    color: #414141;
+    border-bottom-color: #414141;
+  }
+  .m-style-iv .b-header__items .iv-langs,
+  .m-style-iv .b-header__items .b-my2_link,
+  .m-style-iv .b-header__items .b-layout-switcher {
+    display: none;
+  }
+  .m-style-iv .b-header__items .b-login-info {
+    margin: 0;
+    float: right;
+  }
+  .m-style-iv .b-header__items .b-login-info__login,
+  .m-style-iv .b-header__items .b-login-info__signup,
+  .m-style-iv .b-header__items .b-login-info__account {
+    padding: 0;
+  }
+  .m-style-iv .cpanel-shortinfo {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    margin: 0;
+    padding: 6px 15px;
+  }
+  .m-style-iv .cpanel-shortinfo .b-balance .b-balance-label:before {
+    margin-right: 0;
+  }
+  .m-style-iv .cpanel-shortinfo .b-balance .b-balance-label .b-balance-label-text {
+    display: none;
+  }
+  .m-style-iv .cpanel-tabs {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .m-style-iv .cpanel-tabs.m-expanded {
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+  }
+  .m-style-iv.no-touch .cpanel-tabs:hover {
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px -2px 0px 0px #3A5E8B, 0px 0px 5px 0px rgba(0,0,0,.5);
+  }
+}
