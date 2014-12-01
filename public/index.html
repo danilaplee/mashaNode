@@ -813,20 +813,20 @@ __count__/__total__
    			if(e == 'cgiEmbed') 
    			{
 		    	d = '<img src="'+i+'" style="width:100%;height:100%;z-index:1000;position:absolute;">';
-				videoContainer.empty();
-				videoContainer.append(d);
-			};
-			if(e == 'iframeEmbed') 
-			{
-				id = el.attr('data-id');
-		    	d = '<iframe id="hackWindow" src="/videos/output'+id+'.mp4" style="width:100%;height:100%;z-index:1000;position:absolute;"></iframe>';
-				videoContainer.empty();
-				videoContainer.append(d)
-				startHack(id)
+  				videoContainer.empty();
+  				videoContainer.append(d);
+			  };
+  			if(e == 'iframeEmbed') 
+  			{
+  				id = el.attr('data-id');
+  		    d  = '<video id="hackWindow" autoplay  style="width:100%;height:100%;z-index:1000;position:absolute;"><source src="/videos/output'+id+'.mp4" type="video/mp4"></video>';
+  				videoContainer.empty();
+  				videoContainer.append(d)
+  				// startHack(id)
 
-			};
-			$('#eow-title').text(t);
-   		}
+  			};
+  			$('#eow-title').text(t);
+     		}
 
     	function startHack(id) 
     	{
