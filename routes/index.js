@@ -24,7 +24,7 @@ router.get('/video/:id/:link', function(req, res)
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
-    		request.destroy();
+    		redir.destroy();
     	}
     }
 	var n = req.params.id;
@@ -68,15 +68,15 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 24000) {
+				        	if(progress.time >= 32000) {
 				        		console.log('end');
 				            	videoStreams[n] = false;
 								console.log('videoStream'+n+' Status = '+videoStreams[n])
-				            	request.destroy();
+				            	redir.destroy();
 				        	};
 				        })
 			    	    .stream().pipe(output);
-			    	    var killPipe = setTimeout(checkPipe, 10000, n, request);
+			    	    var killPipe = setTimeout(checkPipe, 10000, n, redir);
 
 			    	}
 			    	else 
