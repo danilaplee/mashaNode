@@ -26,7 +26,6 @@ router.get('/video/:id/:link', function(req, res)
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
 			redir.destroy();
-			redir = {};
     	}
     }
 	var n = req.params.id;
@@ -41,14 +40,12 @@ router.get('/video/:id/:link', function(req, res)
 		{
 			var Codek = 'h264';
 		}
-		var request = http.get(link, function(response) 
+		var request[n] = http.get(link, function(response) 
 		{
 	   		if(response.statusCode == 302) 
 	   		{
-	   			// console.log(response.statusCode)
 			    var streamUrl = response.headers.location;
 				console.log('videoStream'+n+' Status = '+videoStreams[n])
-				// console.log(videoStreams);
 				redir[n] = http.get(streamUrl, function(response) 
 			   	{
 
@@ -61,9 +58,9 @@ router.get('/video/:id/:link', function(req, res)
 			    	    .videoBitrate(800 * 1000)
 			    	    .fps(25)
 			    	    .format('mp4')
-				        .on('finish', function() {
+				        .on('finish', function(finish) {
 				            videoStreams[n] == false;
-				        	console.log(videoStreams);
+				        	console.log('videoStream'+n+' finish'+finish)
 				        })
 				        .on('progress', function(progress) 
 				        {
@@ -72,7 +69,6 @@ router.get('/video/:id/:link', function(req, res)
 				        	clearTimeout(killPipe);
 
 				        	if(progress.time >= buffeSize) {
-				            	videoStreams[n] = false;
 				            	checkPipe(n, redir[n]);
 				        	};
 				        })
