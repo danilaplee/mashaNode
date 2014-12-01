@@ -24,7 +24,7 @@ router.get('/video/:id/:link', function(req, res)
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
-			redir.end();
+			redir.destroy();
 			redir = {};
     	}
     }
@@ -72,8 +72,6 @@ router.get('/video/:id/:link', function(req, res)
 
 				        	if(progress.time >= 26000) {
 				            	videoStreams[n] = false;
-								// console.log('videoStream'+n+' Status = '+videoStreams[n])
-				            	// console.log(redir[n].connection);
 				            	checkPipe(n, redir[n]);
 				        	};
 				        })
