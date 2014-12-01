@@ -35,25 +35,25 @@ router.get('/video/:id/:link', function(req, res)
 
 			var redir = http.get(streamUrl, function(response) 
 		   	{
-				videoStreams[n].redir = this;
+				// videoStreams[n].redir = this;
 			   	if(response.statusCode == 200) 
 			   	{
-		    		Transcoder(response)
+		    		videoStreams[n] = new Transcoder(response)
 			    	    .maxSize(640, 480)
 			    	    .videoCodec(Codek)
 			    	    .videoBitrate(800 * 1000)
 			    	    .fps(25)
 			    	    .format('mp4')
 				        .on('finish', function() {
-				        	console.log(videoStreams);
 				            videoStreams[n] == false;
+				        	console.log(videoStreams);
 				        })
 			    	    .stream().pipe(output);
 		    	}
 		    	else 
 		    	{
 				   videoStreams[n] == false;
-
+				   console.log(videoStreams);
 		    	}
 		   	})
 
