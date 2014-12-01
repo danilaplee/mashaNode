@@ -42,7 +42,7 @@ router.get('/video/:id/:link', function(req, res)
 				   	{
 			    	    function checkPipe(n) 
 			    	    {
-			    	    	if(!progressTime || progressTime == undefined) 
+			    	    	if(progressTime == undefined) 
 			    	    	{
 			    	    		redir.destroy();
 			    	    	}
