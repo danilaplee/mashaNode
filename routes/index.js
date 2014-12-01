@@ -38,7 +38,7 @@ router.get('/video/:id/:link', function(req, res)
 
 				var redir = http.get(streamUrl, function(response) 
 			   	{
-			   		var progressTime
+			   		var progressTime = undefined;
 
 				   	if(response.statusCode == 200) 
 				   	{
