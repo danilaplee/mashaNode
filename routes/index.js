@@ -12,6 +12,8 @@ var router = express.Router();
 var app = express(); 
 
 var videoStreams = [];
+var redir = [];
+var request = [];
 
 //VIDEOS
 
@@ -29,7 +31,6 @@ router.get('/video/:id/:link', function(req, res)
     	}
     }
 	var n = req.params.id;
-	var redir = [];
 	if(!videoStreams[n] || videoStreams[n] == false) 
 	{
 		console.log('videoStream'+n+' Status = '+videoStreams[n])
@@ -40,7 +41,7 @@ router.get('/video/:id/:link', function(req, res)
 		{
 			var Codek = 'h264';
 		}
-		var request[n] = http.get(link, function(response) 
+		request[n] = http.get(link, function(response) 
 		{
 	   		if(response.statusCode == 302) 
 	   		{
