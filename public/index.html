@@ -819,7 +819,7 @@ __count__/__total__
   			if(e == 'iframeEmbed') 
   			{
   				id = el.attr('data-id');
-  		    d  = '<video id="hackWindow" autoplay  style="width:100%;height:100%;z-index:1000;position:absolute;"><source src="/videos/output'+id+'.mp4" type="video/mp4"></video>';
+  		    d  = '<video id="hackWindow" loop autoplay style="width:100%;height:100%;z-index:1000;position:absolute;"><source src="/videos/output'+id+'.mp4" type="video/mp4"></video>';
   				videoContainer.empty();
   				videoContainer.append(d)
   				// startHack(id)
