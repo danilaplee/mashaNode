@@ -20,14 +20,16 @@ router.get('/video/:id/:link', function(req, res)
 
     var checkPipe = function checkPipe(n, redir) 
     {
-    	if(progressTime == undefined) 
+    	if(progressTime == undefined || progressTime > 256000) 
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
-			redir.shouldKeepAlive == false;
+			redir.end();
+			redir = {};
     	}
     }
 	var n = req.params.id;
+	var redir = [];
 	if(!videoStreams[n] || videoStreams[n] == false) 
 	{
 		console.log('videoStream'+n+' Status = '+videoStreams[n])
@@ -46,7 +48,7 @@ router.get('/video/:id/:link', function(req, res)
 			    var streamUrl = response.headers.location;
 				console.log('videoStream'+n+' Status = '+videoStreams[n])
 				// console.log(videoStreams);
-				var redir = http.get(streamUrl, function(response) 
+				redir[n] = http.get(streamUrl, function(response) 
 			   	{
 
 				   	if(response.statusCode == 200) 
@@ -68,14 +70,15 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 32000) {
-				        		console.log('end');
-								console.log('videoStream'+n+' Status = '+videoStreams[n])
-				            	console.log(redir);
+				        	if(progress.time >= 256000) {
+				            	videoStreams[n] = false;
+								// console.log('videoStream'+n+' Status = '+videoStreams[n])
+				            	// console.log(redir[n].connection);
+				            	checkPipe(n, redir[n]);
 				        	};
 				        })
 			    	    .stream().pipe(output);
-			    	    var killPipe = setTimeout(checkPipe, 10000, n, redir);
+			    	    var killPipe = setTimeout(checkPipe, 10000, n, redir[n]);
 
 			    	}
 			    	else 
