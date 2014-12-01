@@ -24,7 +24,7 @@ router.get('/video/:id/:link', function(req, res)
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
-    		redir.destroy();
+			redir.shouldKeepAlive == false;
     	}
     }
 	var n = req.params.id;
@@ -72,7 +72,7 @@ router.get('/video/:id/:link', function(req, res)
 				        		console.log('end');
 				            	videoStreams[n] = false;
 								console.log('videoStream'+n+' Status = '+videoStreams[n])
-				            	redir.destroy();
+				            	redir.shouldKeepAlive == false;
 				        	};
 				        })
 			    	    .stream().pipe(output);
