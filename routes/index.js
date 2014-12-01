@@ -30,14 +30,15 @@ router.get('/video/:id/:link', function(req, res)
 		}
 		var request = http.get(link, function(response) 
 		{
-	   		if(response.statusCode == 200) 
-	   		{
+	   		// if(response.statusCode == 200) 
+	   		// {
+	   			console.log(response.statusCode)
 			    var streamUrl = response.headers.location;
 				console.log(videoStreams);
 
 				var redir = http.get(streamUrl, function(response) 
 			   	{
-				   	if(response.statusCode != 404) 
+				   	if(response.statusCode == 200) 
 				   	{
 						Transcoder(response)
 			    	    .maxSize(640, 480)
@@ -67,12 +68,12 @@ router.get('/video/:id/:link', function(req, res)
 					   console.log(videoStreams);
 			    	}
 			   	})
-			}
-	    	else 
-	    	{
-			   videoStreams[n] = false;
-			   console.log(videoStreams);
-	    	}
+			// }
+	  //   	else 
+	  //   	{
+			//    videoStreams[n] = false;
+			//    console.log(videoStreams);
+	  //   	}
 
 		});	
 	}
