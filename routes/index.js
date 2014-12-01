@@ -17,23 +17,24 @@ var request = [];
 
 //VIDEOS
 
-router.get('/video/:id/:link', function(req, res) 
+router.get('/video/:id/:link', function(req, res, next) 
 {
 
-	var buffeSize = 60000;
+	var buffeSize = 200000;
     var checkPipe = function checkPipe(n, redir) 
     {
     	if(progressTime == undefined || progressTime > buffeSize) 
     	{
         	videoStreams[n] = false;
-			console.log('videoStream'+n+' Status = '+videoStreams[n])
 			redir.destroy();
+			console.log('videoStream-'+n+' Status = Destroyed')
+			next();
     	}
     }
 	var n = req.params.id;
 	if(!videoStreams[n] || videoStreams[n] == false) 
 	{
-		console.log('videoStream'+n+' Status = '+videoStreams[n])
+		console.log('videoStream-'+n+' Status = '+videoStreams[n])
 		videoStreams[n] = true;
 		var link = decodeURIComponent(req.params.link);
 		var output  = fs.createWriteStream("public/videos/output"+n+".mp4");
@@ -41,16 +42,16 @@ router.get('/video/:id/:link', function(req, res)
 		{
 			var Codek = 'h264';
 		}
-		request[n] = http.get(link, function(response) 
+		request[n] = http.get(link, function(response, error) 
 		{
-	   		if(response.statusCode == 302) 
+	   		if(response.statusCode == 302 && error == undefined) 
 	   		{
 			    var streamUrl = response.headers.location;
-				console.log('videoStream'+n+' Status = '+videoStreams[n])
-				redir[n] = http.get(streamUrl, function(response) 
+				console.log('videoStream-'+n+' Status = '+videoStreams[n])
+				redir[n] = http.get(streamUrl, function(response, error)
 			   	{
 
-				   	if(response.statusCode == 200) 
+				   	if(response.statusCode == 200 && error == undefined) 
 				   	{
 
 						Transcoder(response)
@@ -61,15 +62,16 @@ router.get('/video/:id/:link', function(req, res)
 			    	    .format('mp4')
 				        .on('finish', function(finish) {
 				            videoStreams[n] == false;
-				        	console.log('videoStream-'+n+' Interrupted Connection ')
+				        	console.log('videoStream-'+n+' Status = Interrupted Connection ')
 				        })
 				        .on('progress', function(progress) 
 				        {
-				        	console.log('videoStream-'+n+' Time = '+progress.time)
+				        	// console.log('videoStream-'+n+' Time = '+progress.time)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
 				        	if(progress.time >= buffeSize) {
+				        		console.log('videoStream-'+n+' MaxTime')
 				            	checkPipe(n, redir[n]);
 				        	};
 				        })
@@ -80,24 +82,26 @@ router.get('/video/:id/:link', function(req, res)
 			    	else 
 			    	{
 					  	videoStreams[n] = false;
-				        console.log('videoStream-'+n+' Interrupted Connection ')
+						console.log('videoStream-'+n+' Status = Interrupted Connection ['+error+']')
+						next()
 			    	}
 			   	})
 			}
 	    	else 
 	    	{
 			    videoStreams[n] = false;
-				console.log('videoStream-'+n+' Interrupted Connection ')
+				console.log('videoStream-'+n+' Status = Interrupted Connection ['+error+']')
 				request.shouldKeepAlive == false;
+				next()
 	    	}
 
 		});	
 	}
 	else 
 	{
-		console.log('videoStream'+n+' Status = '+videoStreams[n])
-		// request.shouldKeepAlive == false;
-		res.send('videoStream'+n+' Status = '+videoStreams[n])
+		console.log('videoStream-'+n+' Status = '+videoStreams[n])
+		res.send('videoStream-'+n+' Status = '+videoStreams[n])
+		next();
 		
 	}
 
