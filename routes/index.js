@@ -38,6 +38,8 @@ router.get('/video/:id/:link', function(req, res)
 
 				var redir = http.get(streamUrl, function(response) 
 			   	{
+			   		var progressTime
+
 				   	if(response.statusCode == 200) 
 				   	{
 			    	    function checkPipe(n) 
@@ -65,7 +67,7 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 120000) {
+				        	if(progress.time >= 64000) {
 				        		console.log('end');
 				            	videoStreams[n] = false;
 				            	redir.destroy();
