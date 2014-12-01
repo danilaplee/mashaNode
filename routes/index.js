@@ -51,7 +51,7 @@ router.get('/video/:id/:link', function(req, res)
 			        {
 			        	console.log('videoStream'+n+' Time = '+progress.time)
 
-			        	if(progress.time >= 240000) {
+			        	if(progress.time >= 120000) {
 			        		console.log('end');
 			            	videoStreams[n] = false;
 			            	redir.destroy();
