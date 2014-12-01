@@ -37,7 +37,7 @@ router.get('/video/:id/:link', function(req, res)
 
 				var redir = http.get(streamUrl, function(response) 
 			   	{
-				   	if(response.statusCode == 200) 
+				   	if(response.statusCode != 404) 
 				   	{
 						Transcoder(response)
 			    	    .maxSize(640, 480)
