@@ -30,8 +30,8 @@ router.get('/video/:id/:link', function(req, res)
 		}
 		var request = http.get(link, function(response) 
 		{
-	   		// if(response.statusCode == 200) 
-	   		// {
+	   		if(response.statusCode == 302) 
+	   		{
 	   			console.log(response.statusCode)
 			    var streamUrl = response.headers.location;
 				console.log(videoStreams);
@@ -68,12 +68,12 @@ router.get('/video/:id/:link', function(req, res)
 					   console.log(videoStreams);
 			    	}
 			   	})
-			// }
-	  //   	else 
-	  //   	{
-			//    videoStreams[n] = false;
-			//    console.log(videoStreams);
-	  //   	}
+			}
+	    	else 
+	    	{
+			   videoStreams[n] = false;
+			   console.log(videoStreams);
+	    	}
 
 		});	
 	}
