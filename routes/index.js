@@ -30,41 +30,49 @@ router.get('/video/:id/:link', function(req, res)
 		}
 		var request = http.get(link, function(response) 
 		{
-		    var streamUrl = response.headers.location;
-			console.log(videoStreams);
+	   		if(response.statusCode == 200) 
+	   		{
+			    var streamUrl = response.headers.location;
+				console.log(videoStreams);
 
-			var redir = http.get(streamUrl, function(response) 
-		   	{
-			   	if(response.statusCode == 200) 
+				var redir = http.get(streamUrl, function(response) 
 			   	{
-					Transcoder(response)
-		    	    .maxSize(640, 480)
-		    	    .videoCodec(Codek)
-		    	    .videoBitrate(800 * 1000)
-		    	    .fps(25)
-		    	    .format('mp4')
-			        .on('finish', function() {
-			            videoStreams[n] == false;
-			        	console.log(videoStreams);
-			        })
-			        .on('progress', function(progress) 
-			        {
-			        	console.log('videoStream'+n+' Time = '+progress.time)
+				   	if(response.statusCode == 200) 
+				   	{
+						Transcoder(response)
+			    	    .maxSize(640, 480)
+			    	    .videoCodec(Codek)
+			    	    .videoBitrate(800 * 1000)
+			    	    .fps(25)
+			    	    .format('mp4')
+				        .on('finish', function() {
+				            videoStreams[n] == false;
+				        	console.log(videoStreams);
+				        })
+				        .on('progress', function(progress) 
+				        {
+				        	console.log('videoStream'+n+' Time = '+progress.time)
 
-			        	if(progress.time >= 120000) {
-			        		console.log('end');
-			            	videoStreams[n] = false;
-			            	redir.destroy();
-			        	};
-			        })
-		    	    .stream().pipe(output);
-		    	}
-		    	else 
-		    	{
-				   videoStreams[n] = false;
-				   console.log(videoStreams);
-		    	}
-		   	})
+				        	if(progress.time >= 120000) {
+				        		console.log('end');
+				            	videoStreams[n] = false;
+				            	redir.destroy();
+				        	};
+				        })
+			    	    .stream().pipe(output);
+			    	}
+			    	else 
+			    	{
+					   videoStreams[n] = false;
+					   console.log(videoStreams);
+			    	}
+			   	})
+			}
+	    	else 
+	    	{
+			   videoStreams[n] = false;
+			   console.log(videoStreams);
+	    	}
 
 		});	
 	}
