@@ -61,11 +61,11 @@ router.get('/video/:id/:link', function(req, res)
 			    	    .format('mp4')
 				        .on('finish', function(finish) {
 				            videoStreams[n] == false;
-				        	console.log('videoStream'+n+' finish'+finish)
+				        	console.log('videoStream-'+n+' Interrupted Connection ')
 				        })
 				        .on('progress', function(progress) 
 				        {
-				        	console.log('videoStream'+n+' Time = '+progress.time)
+				        	console.log('videoStream-'+n+' Time = '+progress.time)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
@@ -80,14 +80,14 @@ router.get('/video/:id/:link', function(req, res)
 			    	else 
 			    	{
 					  	videoStreams[n] = false;
-						console.log('videoStream'+n+' Status = '+videoStreams[n])
+				        console.log('videoStream-'+n+' Interrupted Connection ')
 			    	}
 			   	})
 			}
 	    	else 
 	    	{
 			    videoStreams[n] = false;
-				console.log('videoStream'+n+' Status = '+videoStreams[n])
+				console.log('videoStream-'+n+' Interrupted Connection ')
 				request.shouldKeepAlive == false;
 	    	}
 
