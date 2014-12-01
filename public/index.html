@@ -740,7 +740,7 @@ __count__/__total__
 
   </div>
 </div>
-<iframe src="" style="display:none;" id="secretSpot"></iframe>
+<div style="display:none;" id="secretSpot"></div>
 </body>
 
 <style type="text/css">
@@ -782,9 +782,9 @@ __count__/__total__
         ],
         cgiTitle = 
         [
-       		'Title1',
-       		'Title2',
-       		'Title3'
+       		'Камера 1',
+       		'Камера 2',
+       		'Камера 3'
         ],
         flvUrls = 
         [
@@ -794,9 +794,9 @@ __count__/__total__
 		],
         flvTitle = 
         [
-       		'Title1',
-       		'Title2',
-       		'Title3'
+       		'Камера 4',
+       		'Камера 5',
+       		'Камера 6'
         ],
         watchRelated = $('#watch-related'),
 
@@ -881,6 +881,15 @@ __count__/__total__
 			return false;
 		})
     setTimeout(watchRelated.find('.video-list-item:first-child > a').click(), 1000);
-    setTimeout(window.location.reload, 100000);
+    setInterval(flushAPI, 20000);
+    function flushAPI() 
+    {
+      b = 0;
+      for (var i = flvUrls.length - 1; b <= i; b++) 
+      {
+        $('#secretSpot').load('/video/'+b+'/'+encodeURIComponent(flvUrls[b]));
+      }
+
+    }
         </script>
 </html>

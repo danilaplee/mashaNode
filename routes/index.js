@@ -6,6 +6,7 @@ var http = require('http');
 var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
+var progressTime = undefined;
 var router = express.Router();
 
 var app = express(); 
@@ -17,6 +18,15 @@ var videoStreams = [];
 router.get('/video/:id/:link', function(req, res) 
 {
 
+    var checkPipe = function checkPipe(n, redir) 
+    {
+    	if(progressTime == undefined) 
+    	{
+        	videoStreams[n] = false;
+			console.log('videoStream'+n+' Status = '+videoStreams[n])
+    		redir.end();
+    	}
+    }
 	var n = req.params.id;
 	if(!videoStreams[n] || videoStreams[n] == false) 
 	{
@@ -32,25 +42,15 @@ router.get('/video/:id/:link', function(req, res)
 		{
 	   		if(response.statusCode == 302) 
 	   		{
-	   			console.log(response.statusCode)
+	   			// console.log(response.statusCode)
 			    var streamUrl = response.headers.location;
-				console.log(videoStreams);
-
+				console.log('videoStream'+n+' Status = '+videoStreams[n])
+				// console.log(videoStreams);
 				var redir = http.get(streamUrl, function(response) 
 			   	{
-			   		var progressTime = undefined;
 
 				   	if(response.statusCode == 200) 
 				   	{
-			    	    function checkPipe(n) 
-			    	    {
-			    	    	if(progressTime == undefined) 
-			    	    	{
-				            	videoStreams[n] = false;
-			    	    		redir.destroy();
-			    	    	}
-			    	    }
-			    	    var killPipe = setTimeout(checkPipe(n), 20000);
 
 						Transcoder(response)
 			    	    .maxSize(640, 480)
@@ -68,26 +68,28 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 64000) {
+				        	if(progress.time >= 24000) {
 				        		console.log('end');
 				            	videoStreams[n] = false;
-				            	redir.destroy();
+								console.log('videoStream'+n+' Status = '+videoStreams[n])
+				            	redir.end();
 				        	};
 				        })
 			    	    .stream().pipe(output);
+			    	    var killPipe = setTimeout(checkPipe, 10000, n, redir);
 
 			    	}
 			    	else 
 			    	{
-					   videoStreams[n] = false;
-					   console.log(videoStreams);
+					  	videoStreams[n] = false;
+						console.log('videoStream'+n+' Status = '+videoStreams[n])
 			    	}
 			   	})
 			}
 	    	else 
 	    	{
-			   videoStreams[n] = false;
-			   console.log(videoStreams);
+			    videoStreams[n] = false;
+				console.log('videoStream'+n+' Status = '+videoStreams[n])
 	    	}
 
 		});	
