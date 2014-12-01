@@ -40,6 +40,15 @@ router.get('/video/:id/:link', function(req, res)
 			   	{
 				   	if(response.statusCode == 200) 
 				   	{
+			    	    function checkPipe(n) 
+			    	    {
+			    	    	if(!progressTime || progressTime == undefined) 
+			    	    	{
+			    	    		redir.destroy();
+			    	    	}
+			    	    }
+			    	    var killPipe = setTimeout(checkPipe(n), 8000);
+
 						Transcoder(response)
 			    	    .maxSize(640, 480)
 			    	    .videoCodec(Codek)
@@ -53,6 +62,8 @@ router.get('/video/:id/:link', function(req, res)
 				        .on('progress', function(progress) 
 				        {
 				        	console.log('videoStream'+n+' Time = '+progress.time)
+				        	var progressTime = progress.time;
+				        	clearTimeout(killPipe);
 
 				        	if(progress.time >= 120000) {
 				        		console.log('end');
@@ -61,6 +72,7 @@ router.get('/video/:id/:link', function(req, res)
 				        	};
 				        })
 			    	    .stream().pipe(output);
+
 			    	}
 			    	else 
 			    	{
