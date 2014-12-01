@@ -18,9 +18,10 @@ var videoStreams = [];
 router.get('/video/:id/:link', function(req, res) 
 {
 
+	var buffeSize = 60000;
     var checkPipe = function checkPipe(n, redir) 
     {
-    	if(progressTime == undefined || progressTime > 26000) 
+    	if(progressTime == undefined || progressTime > buffeSize) 
     	{
         	videoStreams[n] = false;
 			console.log('videoStream'+n+' Status = '+videoStreams[n])
@@ -70,7 +71,7 @@ router.get('/video/:id/:link', function(req, res)
 				        	var progressTime = progress.time;
 				        	clearTimeout(killPipe);
 
-				        	if(progress.time >= 26000) {
+				        	if(progress.time >= buffeSize) {
 				            	videoStreams[n] = false;
 				            	checkPipe(n, redir[n]);
 				        	};
