@@ -101,6 +101,7 @@ router.get('/video/:id/:link', function(req, res)
 	{
 		console.log('videoStream'+n+' Status = '+videoStreams[n])
 		// request.shouldKeepAlive == false;
+		res.send('videoStream'+n+' Status = '+videoStreams[n])
 		
 	}
 
