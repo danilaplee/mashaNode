@@ -46,10 +46,11 @@ router.get('/video/:id/:link', function(req, res)
 			    	    {
 			    	    	if(progressTime == undefined) 
 			    	    	{
+				            	videoStreams[n] = false;
 			    	    		redir.destroy();
 			    	    	}
 			    	    }
-			    	    var killPipe = setTimeout(checkPipe(n), 8000);
+			    	    var killPipe = setTimeout(checkPipe(n), 20000);
 
 						Transcoder(response)
 			    	    .maxSize(640, 480)
