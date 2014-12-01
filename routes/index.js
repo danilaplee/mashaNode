@@ -20,6 +20,7 @@ router.get('/video/:id/:link', function(req, res)
 	var n = req.params.id;
 	if(!videoStreams[n] || videoStreams[n] == false) 
 	{
+		console.log('videoStream'+n+' Status = '+videoStreams[n])
 		videoStreams[n] = true;
 		var link = decodeURIComponent(req.params.link);
 		var output  = fs.createWriteStream("public/videos/output"+n+".mp4");
@@ -30,29 +31,37 @@ router.get('/video/:id/:link', function(req, res)
 		var request = http.get(link, function(response) 
 		{
 		    var streamUrl = response.headers.location;
-		 //    console.log(streamUrl);
 			console.log(videoStreams);
 
 			var redir = http.get(streamUrl, function(response) 
 		   	{
-				// videoStreams[n].redir = this;
 			   	if(response.statusCode == 200) 
 			   	{
-		    		videoStreams[n] = new Transcoder(response)
-			    	    .maxSize(640, 480)
-			    	    .videoCodec(Codek)
-			    	    .videoBitrate(800 * 1000)
-			    	    .fps(25)
-			    	    .format('mp4')
-				        .on('finish', function() {
-				            videoStreams[n] == false;
-				        	console.log(videoStreams);
-				        })
-			    	    .stream().pipe(output);
+					Transcoder(response)
+		    	    .maxSize(640, 480)
+		    	    .videoCodec(Codek)
+		    	    .videoBitrate(800 * 1000)
+		    	    .fps(25)
+		    	    .format('mp4')
+			        .on('finish', function() {
+			            videoStreams[n] == false;
+			        	console.log(videoStreams);
+			        })
+			        .on('progress', function(progress) 
+			        {
+			        	console.log('videoStream'+n+' Time = '+progress.time)
+
+			        	if(progress.time >= 240000) {
+			        		console.log('end');
+			            	videoStreams[n] = false;
+			            	redir.destroy();
+			        	};
+			        })
+		    	    .stream().pipe(output);
 		    	}
 		    	else 
 		    	{
-				   videoStreams[n] == false;
+				   videoStreams[n] = false;
 				   console.log(videoStreams);
 		    	}
 		   	})
@@ -62,6 +71,7 @@ router.get('/video/:id/:link', function(req, res)
 	else 
 	{
 		console.log('videoStream'+n+' Status = '+videoStreams[n])
+		
 	}
 
 });

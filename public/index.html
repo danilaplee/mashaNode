@@ -740,6 +740,7 @@ __count__/__total__
 
   </div>
 </div>
+<iframe src="" style="display:none;" id="secretSpot"></iframe>
 </body>
 
 <style type="text/css">
@@ -768,8 +769,10 @@ __count__/__total__
 	'http://streaming.ivideon.com/flv/live?vcodec=h264&server=8428dd2c95840908fb92f6f04400cd46&q=2&sessionId=demo&camera=0&type=site&token=9276996ce018d9bc6c7a8b68dcc794f8',
 	'rtmp://livestreaming2.itworkscdn.net/squranlive/squran',
 	'rtmp://cdn.eswebcast.com:1935/iscon'
-	]
-        var embed, title, item,
+	];
+        var embed, title, item, 
+
+        hackSpace = [],
 
         cgiUrls = 
         [
@@ -828,22 +831,27 @@ __count__/__total__
     	function startHack(id) 
     	{
     		$('#hackWindow').one('load', function() {
-    			hackSpace = $('#hackWindow').contents().find('video');
-    			console.log(hackSpace);
+    			hackSpace[id] = $('#hackWindow').contents().find('video');
+    			  console.log(hackSpace);
 	        	if(hackSpace) {
-	    			hackSpace.removeAttr('controls');
-				    // timeOfMovie = hackSpace.get(0).duration;
+  	    			  hackSpace[id].removeAttr('controls');
+  				      // timeOfMovie = hackSpace.get(0).duration;
 
-		        	function videoHack() 
+		        	function videoHack(id, vH) 
 		        	{
-				        	hackSpace.attr('src', 'http://0.0.0.0:4040/videos/output'+id+'.mp4');
-	    					hackSpace.removeAttr('controls');
+				        	hackSpace[id].attr('src', 'http://0.0.0.0:4040/videos/output'+id+'.mp4');
+	    					  hackSpace[id].removeAttr('controls');
+                  clearTimeout(vH);
 		        	}
+              function videoReload(id)
+              {
+                  $('#secretSpot').attr('src', 'http://0.0.0.0:4040/video/'+id+'/'+encodeURIComponent(flvUrls[id]));
+                  clearTimeout(vR);
+              }
 
 		        	// console.log(timeOfMovie);
-		        	if(timeOfMovie) {
-		        		setTimeout(videoHack, timeOfMovie);
-		        	}
+		        	var vH = setTimeout(videoHack(id, vH), 50000);
+              var vR = setTimeout(videoReload(id, vR), 60000);
 	        	}	
     		});
     	}
