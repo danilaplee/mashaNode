@@ -821,7 +821,8 @@ __count__/__total__
   				id = el.attr('data-id');
   		    d  = '<video id="hackWindow" loop autoplay style="width:100%;height:100%;z-index:1000;position:absolute;"><source src="/videos/output'+id+'.mp4" type="video/mp4"></video>';
   				videoContainer.empty();
-  				videoContainer.append(d)
+  				videoContainer.append(d);
+          setTimeout(window.location.reload, 100000);
   				// startHack(id)
 
   			};
@@ -880,5 +881,6 @@ __count__/__total__
 			makeVideo(el);
 			return false;
 		})
+    setTimeout($('#watch-related > .video-list-item > a').click(), 1000);
         </script>
 </html>
